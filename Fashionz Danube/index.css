@@ -1,0 +1,566 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.nevbar{
+    display: flex;
+}
+.menu {
+    height: 100px;
+}
+
+.menu ul li{
+    display: inline-block;
+    font-weight: 700;
+    color:rgb(0, 0, 0);
+    padding: 10px 13px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.enqnow{
+    background-color: orange;
+    color: white;
+    border-color: white;
+    border-style: none;
+    height: 50px;
+}
+.banner{
+    width: 100%;
+}
+.fashionby{
+    background-color: rgb(27, 27, 84);
+    display: flex;
+    padding-bottom: 3%;
+}
+.byleft{
+    padding-left: 10%;
+    padding-top: 10%;
+    font-family: sans-serif;
+    color: white;
+}
+
+.bylefth2{
+    margin-top: 0%;
+    color: orange;
+    font-size: 250%;
+}
+.bylefttitle1{
+    flex-basis: 47%;
+    border-right: 1px solid orange;
+    margin-bottom: 20px;
+}
+.about-items{
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:20px;
+}
+.about-item1{
+    flex-basis: 47%;
+    border-right: 1px solid orange;
+    margin-bottom: 20px;
+}
+.about-item6{
+    color: orange;
+}
+.byleftp{
+    line-height: 180%;
+}
+.byright{
+    height: 120%;
+    margin-right: 30%;
+    margin-top: 10%;
+    color: orange;
+}
+.byrightcomponent{
+    background-color: white;
+    width: 220%;
+    height: 550px; 
+    margin-left: 40%;   
+}
+.byrighth1{
+    padding-top: 5%;
+}
+.byrightbut{
+    width: 90%;
+    margin: 20px;
+    border: 0px;
+    font-size: 17px;
+    color: #282828;
+    border-bottom: 1px black solid;
+}
+.byrightbut2{
+    background-color: orange;
+    border: 0cap;
+    border-radius: 5px;
+    margin-right: 50%;
+    margin-top: 10%;
+    height: 60px;
+    width: 30%;
+    font-weight: 800;
+}
+.gallery{
+    padding-top: 3%;
+}
+.galleryimg{
+    display: flex;
+}
+.why{
+    padding-top: 3%;
+}
+.whyp{
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 180%;
+    color: rgba(88, 88, 88, 0.781);
+}
+.whyimg{
+    display: flex;
+    margin-left: 5%;
+}
+.whyimg1{
+    margin-right: 7%;
+}
+.floor{
+    padding-top: 3%;
+}
+.floorh{
+    font-size: 120%;
+}
+.floorimg{
+    display: flex;
+    margin-left: 10% ;
+}
+.floorimg1{
+    margin-right: 10%;
+}
+.amenities{
+    padding-top: 8%;
+}
+.amenh{
+    margin-right: 80%;
+    font-size: 105%;
+}
+.amehr{
+    margin-top: 2%;
+     width: 1450; 
+}
+.amep{
+    display: flex;
+    margin-left: 4.5%;
+    
+}.amep1{
+    margin-left: 3%;
+    margin-top: 1%;
+    font-weight: 600;
+}
+.amepbut1{
+    background-color: red;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 120%;
+    font-weight: 700;
+}
+.ameimg1{
+    display: flex;
+
+}
+.ameimg2{
+    margin-left: 8%;
+    
+}
+.ameimg3{
+    display: flex;
+    margin-right: 9%;
+    margin-top: 3%;
+}
+.ameimg4{
+    display: flex;
+    margin-top: 3%;    
+}
+.ameimgtext{
+    font-weight: 600;
+}
+.location{
+    margin-top: 4%;
+}
+.locationh{
+    font-size: 120%;
+}
+.walkthrough{
+    margin-top: 3%;
+}
+.walkp{
+    font-size: 115%;
+}
+.today{
+    display: flex;
+    margin-top: 10%;
+}
+.todayimg{
+        margin-left: 6%;
+}
+.todayleft{   
+    width: 100%;
+}
+.todayh{
+    font-size: 130%;
+    margin-right: 4%;
+    
+}
+.todayrow1{
+    display: flex;
+    margin-left: 7%;    
+}
+.todayfirstname{
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #898989;
+    width: 120px;
+    height: 30px;
+    padding-right: 28%;
+    height: 35px; 
+    padding-left: 1%;   
+}
+.todaylastname{
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #898989;
+    width: 120px;
+    height: 30px;
+    padding-right: 28%;
+    height: 35px;
+    margin-left: 10%;  
+    padding-left: 1%;  
+}
+.todayrow2{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 7%; 
+}
+.todaymassage{
+    margin-top: 2%;
+}
+.todaymassage1{
+    margin-right: 1%;
+    width: 85%;
+    height: 100px; 
+    font-size: 140%;
+    color: #282828;   
+}
+.todaysubmit{
+    
+    width: 500px;
+    background-color: #cd2721;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    border: 0px;
+    width: 86%;
+    margin-right: 1%;
+    margin-top: 1.5%;
+}
+.denube{
+    background-color: rgb(27, 27, 84);
+    margin-top: 1%;
+    padding-bottom: 2%;
+    display: flex;
+}
+.denubeleft{
+    margin-left: 6%;
+    margin-top: 12%;
+}
+.denubelefth1{
+ color: white; 
+}
+.denubeleftimg{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.denubeleftp1{
+    color: white;
+    line-height: 200%;
+    margin-right: 13%;
+}
+.denuberight{
+ margin-left: 3%;
+}
+.denuberughtimg{
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 8%;
+    
+}
+.denuberightp{
+    text-align: left;
+    margin-left: 8%;
+    color: white;
+    line-height: 25px;
+}
+.denubefoot{
+    padding-top: 1%;
+    background-color: rgb(27, 27, 84);
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 1%
+}
+span{
+    color: orange;
+}
+
+/* For Phone */
+
+@media(min-width:0px) and (max-width:500px)
+ {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: sans-serif;
+    }
+    
+    .main {
+        text-align: center;
+    }
+    
+    .nevbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        height: 50px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .menu ul li {
+        padding: 10px 13px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    .enqnow {
+        background-color: orange;
+        color: white;
+        border: none;
+        height: 40px;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    
+    .banner {
+        width: 100%;
+    }
+    
+    .fashionby {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(27, 27, 84);
+        color: white;
+        padding: 3% 5%;
+    }
+    
+    .byleft {
+        font-family: sans-serif;
+        padding-top: 5%;
+        text-align: center;
+    }
+    
+    .bylefth2 {
+        color: orange;
+        font-size: 150%;
+    }
+    
+    .about-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .about-item1 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .about-item6 {
+        color: orange;
+    }
+    
+    .byleftp {
+        line-height: 180%;
+    }
+    
+    .byrightcomponent {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        margin: 20px 50px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .byrighth1 {
+        text-align: center;
+    }
+    
+    .byrightbut {
+        background-color: orange;
+        color: white;
+        border: none;
+        height: 40px;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+    
+    .gallery {
+        padding: 3% 5%;
+    }
+    
+    .galleryimg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .galleryimgin{
+        padding-bottom: 10%;
+    }
+    
+    .denube {
+        padding: 3% 5%;
+    }
+    
+    .whyp {
+        line-height: 180%;
+        color: rgba(88, 88, 88, 0.781);
+        text-align: center;
+    }
+    
+    .walkthrough{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }  
+    .whyimg{
+        margin: 10% 0%;
+        display: flex;
+        flex-wrap: wrap;
+    }  
+    .whyimg img {
+        margin: 5px;
+    }
+    
+    .floorh {
+        font-size: 120%;
+        text-align: center;
+    }
+    .floorimg{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0% 20%;
+    }
+    
+    .todayimg {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+   .amehr{
+    margin-top: 2%;
+     width: auto; 
+}
+    
+    .locationh {
+        font-size: 120%;
+        text-align: center;
+    }
+    
+    .walkp {
+        font-size: 115%;
+        text-align: center;
+    }
+    .locationimgin{
+        height: 10px;
+        width: 40%;
+    }
+    
+    .todayh {
+        font-size: 130%;
+        margin-right: 4%;
+    }
+
+    .todayrow2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .todaysubmit {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .todaysubmit {
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .denube {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 5%;
+        background-color: rgb(27, 27, 84);
+        color: white;
+    }
+    
+    .denubelefth1 {
+        color: white;
+        font-size: 150%;
+    }
+    
+    .denubeleftp1 {
+        line-height: 200%;
+        color: white;
+        text-align: center;
+    }
+    
+    .denubefoot {
+        background-color: rgb(27, 27, 84);
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 1% 0;
+    }
+    
+}

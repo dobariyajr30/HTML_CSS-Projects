@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Shift</title>
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- header start -->
+        <div class="header">
+            <div class="headerlogo">
+                <img src="https://packshifts.in/images/logo.png" width="200">
+            </div>
+            <div class="headercontect">
+                8287 244 244
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- poster start -->
+        <div class="poster">
+            <div class="posterbg">
+                <div class="postercontent">
+                    <div class="postercontentleft">
+                        <div class="posterlefttext1">
+                            <p>PACKSHIFTS - INDIA'S BEST PACKERS AND MOVERS COMPANY </p>
+                        </div>
+                        <div class="posterlefttext2">
+                            <p>CALL US NOW FOR A HASSLE-FREE SHIFTING.</p>
+                        </div>
+                        <div class="posterlefttext3">
+                            <p>We Assure Safety And Time Delivery Of Items.</p>
+                        </div>
+                        <div class="posterleftlogo">
+                            <div class="posterleftlogo1">
+                                <img src="https://packshifts.in/images/iso.png">
+                            </div>
+                            <div class="posterleftlogo1">
+                                <img src="https://packshifts.in/images/satisfaction.png">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="postercontentright">
+                        <p class="posterrightp1">GET A FREE MOVING QUOTE</p>
+                        <input class="posterrightinput1" type="text" placeholder="Name*">
+                        <input class="posterrightinput1" type="text" placeholder="Mobile Number*">
+                        <input class="posterrightinput1" type="text" placeholder="Email ID*">
+                        <input class="posterrightinput1" type="text" placeholder="Loccation City From*">
+                        <input class="posterrightinput1" type="text" placeholder="Location City To*">
+                        <div class="posterrightcaptcha">
+                            <input class="posterrightcaptcha1" type="text" placeholder="Captcha">
+                            <p class="posterrightcaptcha2">094674</p>
+                        </div>
+                        <div class="posterrighttext1">
+                            <p>By clicking the button below, you agree to receive communications from Packshifts about
+                                relocation <span><u>Privacy Policy</u></span></p>
+                        </div>
+                        <div class="postrrightbutton">
+                            SUBMIT
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- poster end -->
+        <!-- Youtube Video Start -->
+        <div class="packingvideos">
+            <div class="packingvideostitle">
+                <img src="https://packshifts.in/images/blue-icon.png" width="20" height="25">
+                <div class="packingvideostitle1">PACKING</div>
+                <div class="packingvideostitle2">VIDEO</div>
+            </div>
+            <div class="videos1">
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/pyzJTtcb_UA"
+                        title="Bike Packing - Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/J4RbIkAQOEo"
+                        title="Scooty Packing- Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/QwEyVG_4i7M"
+                        title="Fridge Packing- Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="videotitle2">
+                <div class="videotitle1-1">
+                    <p>Bike Packing Video</p>
+                </div>
+                <div class="videotitle1-1">
+                    <p>Scooty Packing Video</p>
+                </div>
+                <div class="videotitle1-1">
+                    <p>Fridge Packing Video</p>
+                </div>
+            </div>
+            <div class="videos1">
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/uwJBLcu70z0"
+                        title="washing machine - Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/v_M2ikG408k"
+                        title="Crockery Packing- Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/asE9hoAX9x8"
+                        title="Clothes Packing - Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="videotitle2">
+                <div class="videotitle1-2">
+                    <p>Washing Machine Packing Video</p>
+                </div>
+                <div class="videotitle1-2">
+                    <p>Crockery Packing Video</p>
+                </div>
+                <div class="videotitle1-2">
+                    <p>Cloths Packing Video</p>
+                </div>
+            </div>
+            <div class="videos1">
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/xmo3jBgD_dU"
+                        title="Showpiece Packing - Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/y-T0Q1sya3o"
+                        title="Matress Packing - Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="viedoe1-1">
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/vBX4i3pUaCI"
+                        title="Sofa Packing- Packers &amp; Movers" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="videotitle2">
+                <div class="videotitle1-1">
+                    <p>Showpiece Packing Video</p>
+                </div>
+                <div class="videotitle1-1">
+                    <p>Matress Packing Video</p>
+                </div>
+                <div class="videotitle1-1">
+                    <p>Sofa Packing Video
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Youtube Video End -->
+        <!-- Service Start -->
+        <div class="service">
+            <div class="servicetitle">
+                <img src="https://packshifts.in/images/blue-icon.png" width="20" height="25">
+                <div class="packingvideostitle1">OUR CORE</div><span class="serivespan">SERVICES</span>
+            </div>
+            <div class="serivcecontent">
+                <div class="serivccecontentbox1">
+                    <div class="serivcecontentimg">
+                        <img class="serivcecontentimgin" src="https://packshifts.in/images/house-shifting.jpg">
+                    </div>
+                    <div class="servicecontenttext">
+                        <div class="servicecontenttexttitle">
+                            HOUSE SHIFTING
+                        </div>
+                        <div class="serivcecontenttextp">
+                            We Are One Of The Most Trusted Packers And Movers Across Gujarat. We Are Happy To Answer All
+                            Of Your Questions With No Obligations. Packshifts Packers & Movers Offers Highly Reliable
+                            And Swift Goods Packing Services Which Are Carried Out By Trained Professionals. Packshifts
+                            Offers Custom Designed Packaging Material For Packing And The Safe Transportation Of Goods.
+                        </div>
+                        <div class="servicecontentbutton">
+                           <button class="servicecontentbuttonin">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="serivccecontentbox1">
+                    <div class="serivcecontentimg">
+                        <img class="serivcecontentimgin" src="https://packshifts.in/images/office-shifting.jpg">
+                    </div>
+                    <div class="servicecontenttext">
+                        <div class="servicecontenttexttitle">
+                            OFFICE SHIFTING
+                        </div>
+                        <div class="serivcecontenttextp">
+                            We Are One Of The Most Trusted Packers And Movers Across Gujarat. We Are Happy To Answer All
+                            Of Your Questions With No Obligations. Packshifts Packers & Movers Offers Highly Reliable
+                            And Swift Goods Packing Services Which Are Carried Out By Trained Professionals. Packshifts
+                            Offers Custom Designed Packaging Material For Packing And The Safe Transportation Of Goods.
+                        </div>
+                        <div class="servicecontentbutton">
+                           <button class="servicecontentbuttonin">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="serivccecontentbox1">
+                    <div class="serivcecontentimg">
+                        <img class="serivcecontentimgin" src="https://packshifts.in/images/bike-shifting.jpg">
+                    </div>
+                    <div class="servicecontenttext">
+                        <div class="servicecontenttexttitle">
+                            BIKE SHIFTING
+                        </div>
+                        <div class="serivcecontenttextp">
+                            We Are One Of The Most Trusted Packers And Movers Across Gujarat. We Are Happy To Answer All
+                            Of Your Questions With No Obligations. Packshifts Packers & Movers Offers Highly Reliable
+                            And Swift Goods Packing Services Which Are Carried Out By Trained Professionals. Packshifts
+                            Offers Custom Designed Packaging Material For Packing And The Safe Transportation Of Goods.
+                        </div>
+                        <div class="servicecontentbutton">
+                           <button class="servicecontentbuttonin">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="serivccecontentbox1">
+                    <div class="serivcecontentimg">
+                        <img class="serivcecontentimgin" src="https://packshifts.in/images/house-shifting.jpg">
+                    </div>
+                    <div class="servicecontenttext">
+                        <div class="servicecontenttexttitle">
+                            HOUSE SHIFTING
+                        </div>
+                        <div class="serivcecontenttextp">
+                            We Are One Of The Most Trusted Packers And Movers Across Gujarat. We Are Happy To Answer All
+                            Of Your Questions With No Obligations. Packshifts Packers & Movers Offers Highly Reliable
+                            And Swift Goods Packing Services Which Are Carried Out By Trained Professionals. Packshifts
+                            Offers Custom Designed Packaging Material For Packing And The Safe Transportation Of Goods.
+                        </div>
+                        <div class="servicecontentbutton">
+                           <button class="servicecontentbuttonin">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        <!-- Youtube Video End -->
+        <!-- Why Packshift Start -->
+        <div class="whypachshift">
+            <div class="whytitle">
+                <div class="titleimg">
+                    <img src="https://packshifts.in/images/blue-icon.png">
+                </div>
+                <div class="whytitletext">
+                    WHY<span class="whyspan">PACKSHIFTS</span>
+                </div>
+            </div>
+            <div class="whytitle2">
+                Why Choose Packshifts Packers & Movers
+            </div>
+            <div class="whyimg">
+                <div class="whyimgrow">
+                    <div class="whyrow1">
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/experienced-staff.png" width="80">
+                            <div class="whyimg1text">
+                                Experienced Staff
+                            </div>
+                        </div>
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/cost-efficient.png" width="80">
+                            <div class="whyimg1text">
+                                Cost-Efficient
+                            </div>
+                        </div>
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/hidden-charges.png" width="80">
+                            <div class="whyimg1text">
+                                No hidde charges
+                            </div>
+                        </div>
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/safe-service.png" width="80">
+                            <div class="whyimg1text">
+                                Safe and Time-Saving Service
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whyrow2">
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/free-quote.png" width="80">
+                            <div class="whyimg1text">
+                                Free Quotation
+                            </div>
+                        </div>
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/support.png" width="80">
+                            <div class="whyimg1text">
+                                24×7 Support Service
+                            </div>
+                        </div>
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/customer-satisfaction.png"
+                                width="80">
+                            <div class="whyimg1text">
+                                100% Customer Satisfaction
+                            </div>
+                        </div>
+                        <div class="whyimg1">
+                            <img class="whyimg1-1" src="https://packshifts.in/images/quality.png" width="80">
+                            <div class="whyimg1text">
+                                Quality Packing Material
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why Packshift End -->
+        <!-- Achivment Start -->
+        <div class="achivments">
+            <div class="achivementtitle">
+                <img class="achivmentstitleimg" src="https://packshifts.in/images/white-icon.png" width="20"
+                    height="25">
+                <h3 class="achivementstitletext">OUR ACHIEVEMENT</h3>
+            </div>
+            <div class="achivementtitle2">
+                Our Achievements , Which Makes Us The Most Preferable Moving Brand
+            </div>
+            <div class="achivementcontect">
+                <div class="achivementcontent1">
+                    <img src="https://packshifts.in/images/experience.png">
+                    <div class="achivementstext1-1">
+                        8
+                    </div>
+                    <div class="achivementstext1-2">
+                        + Years Of Experience
+                    </div>
+                </div>
+                <div class="achivementcontent2">
+                    <img src="https://packshifts.in/images/happy-customer.png" width="50">
+                    <div class="achivementstext1-1">
+                        8554
+                    </div>
+                    <div class="achivementstext2-2">
+                        Happy Customers
+                    </div>
+                </div>
+                <div class="achivementcontent3">
+                    <img src="https://packshifts.in/images/house-relocation.png" width="50">
+                    <div class="achivementstext1-1">
+                        821
+                    </div>
+                    <div class="achivementstext2-2">
+                        Homes Relocated
+                    </div>
+                </div>
+                <div class="achivementcontent4">
+                    <img src="https://packshifts.in/images/car-relocation.png">
+                    <div class="achivementstext1-1">
+                        535
+                    </div>
+                    <div class="achivementstext4-2">
+                        Four Wheelers Relocated
+                    </div>
+                </div>
+                <div class="achivementcontent5">
+                    <img src="https://packshifts.in/images/two-wheeler-relocation.png">
+                    <div class="achivementstext1-1">
+                        1982
+                    </div>
+                    <div class="achivementstext4-2">
+                        Two Wheelers Relocated
+                    </div>
+                </div>
+                <div class="achivementcontent6">
+                    <img src="https://packshifts.in/images/office-relocation.png" width="50">
+                    <div class="achivementstext1-1">
+                        199
+                    </div>
+                    <div class="achivementstext2-2">
+                        Offices Relocated
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Achivment End -->
+        <!-- Customer Start -->
+        <div class="customer">
+            <div class="customertitle">
+                <div class="customertitleimg">
+                    <img src="https://packshifts.in/images/blue-icon.png" alt="">
+                </div>
+                HAPPY <span class="custmoertitlespan">CUSTOMER</span>
+            </div>
+            <div class="custmorebox">
+                <div class="custmoreboxtext">
+                    It was a very smooth shifting from Ahmedabad to Lucknow. I must say Pack shifts customer service and
+                    goods handling is remarkable. Thank you for a easy and tension free shifting. Worth 5rating Thanks
+                    Like.
+                </div>
+                <div class="custmoreboximg">
+                    <img src="https://packshifts.in/images/user.png">
+                </div>
+            </div>
+        </div>
+        <!-- Customer End -->
+        <!-- Clint Start -->
+        <div class="ourclints">
+            <div class="clintstitle">
+                <div class="clinttitleimg">
+                    <img src="https://packshifts.in/images/blue-icon.png">
+                </div>
+                <div class="clinttitletext">
+                    OUR <span class="clinttitlespan">CLIENTS</span>
+                </div>
+            </div>
+            <div class="clintimg">
+                <div>
+                    <img class="clintimg1" src="https://packshifts.in/images/mahindra.jpg">
+                </div>
+                <div>
+                    <img class="clintimg2" src="https://packshifts.in/images/lnt.jpg">
+                </div>
+                <div>
+                    <img class="clintimg3" src="https://packshifts.in/images/sunpharma.jpg">
+                </div>
+                <div>
+                    <img class="clintimg4" src="https://packshifts.in/images/mahindra.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- Clint End -->
+        <!-- Branches Start -->
+        <div class="branche">
+            <div class="branchtitle">
+                <div class="brnachtitleimg">
+                    <img src="https://packshifts.in/images/blue-icon.png" alt="">
+                </div>
+                <div class="branchtitletext">
+                    OUR <span class="clinttitlespan">BRANCHES</span>
+                </div>
+            </div>
+            <div class="branchbox">
+                <div class="branchbox1">
+                    <div class="brnachboximg">
+                        <img src="https://icones.pro/wp-content/uploads/2022/03/icone-de-construction-et-de-batiment-jaune.png"
+                            width="34   ">
+                    </div>
+                    <div class="branchboxtitle">
+                        Vadodara
+                    </div>
+                    <div class="branchboctext">
+                        Vadodara Office Address : FF-06, Kanha City, Opposite Kailash Party Plot, Ajwa Road, Vadodara -
+                        380019, Gujarat.
+                    </div>
+                </div>
+                <div class="branchbox2">
+                    <div class="brnachboximg">
+                        <img src="https://icones.pro/wp-content/uploads/2022/03/icone-de-construction-et-de-batiment-jaune.png"
+                            width="34   ">
+                    </div>
+                    <div class="branchboxtitle">
+                        Gandhinagar
+                    </div>
+                    <div class="branchboctext">
+                        Gandhinagar Office Address : Shop No. 5, Babulal Shops, Behind BSF Camp, Lakewada, Gandhinagar,
+                        Gujarat - 382045.
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- Branches End -->
+        <!-- Last Start -->
+        <div class="last">
+            <div class="lasttitle">
+                <div class="lasttitleimg">
+                    <img src="https://packshifts.in/images/blue-icon.png">
+                </div>
+                <div class="lasttitletext">
+                    PACKSHIFTS <span class="lasttitlespan">ACKERS & MOVERS</span>
+                </div>
+            </div>
+            <div class="lasttable">
+                <div class="table1">
+                    <div class="tabletitle">
+                        Packers & Movers In Ahmedabad
+                    </div>
+                    <ul>
+                        <li>Packers & Movers in Maninagar</li>
+                        <li>Packers & Movers in Sarkhej</li>
+                        <li>Packers & Movers in C G Road</li>
+                        <li>Packers & Movers in Chandkheda</li>
+                        <li>Packers & Movers in Bopal</li>
+                        <li>Packers & Movers in Ellis Bridge</li>
+                        <li>Packers & Movers in Gota</li>
+                        <li>Packers & Movers in Jodhpur</li>
+                        <li>Packers & Movers in Ashram road</li>
+                        <li>Packers & Movers in Motera</li>
+                        <li>Packers & Movers in Naranpura</li>
+                        <li>Packers & Movers in Naroda</li>
+                        <li>Packers & Movers in Naroda road</li>
+                        <li>Packers & Movers in Narol</li>
+                        <li>Packers & Movers in Nikol</li>
+                        <li>Packers & Movers in Odhav</li>
+                        <li>Packers & Movers in Raipur</li>
+                        <li>Packers & Movers in Satellite</li>
+                        <li>Packers & Movers in Thaltej</li>
+                        <li>Packers & Movers in Mandvi</li>
+                        <li>Packers & Movers in Thaltej Road</li>
+                        <li>Packers & Movers in Vastral</li>
+                        <li>Packers & Movers in Vastrapur</li>
+                        <li>Packers & Movers in Vatva</li>
+                        <li>Packers & Movers in Navrangpura</li>
+                        <li>Packers & Movers in S G Highway</li>
+                        <li>Packers & Movers in Manipur</li>
+                        <li>Packers & Movers in New Ranip</li>
+                        <li>Packers & Movers in New CG Road</li>
+                        <li>Packers & Movers in Narol Road</li>
+                        <li>Packers & Movers in Gita Mandir</li>
+                        <li>Packers & Movers in Dholera</li>
+                        <li>Packers & Movers in 132 Feet Ring Road</li>
+                        <li>Packers & Movers in Science City</li>
+                        <li>Packers & Movers in Hansol</li>
+                        <li>Packers & Movers in Aslali</li>
+                        <li>Packers & Movers in Anand</li>
+                    </ul>
+                </div>
+                <div class="table2">
+                    <div class="tabletitle">
+                        Packers & Movers In Vadodara
+                    </div>
+                    <ul>
+                        <li>Packers & Movers in Alkapuri</li>
+                        <li>Packers & Movers in Fathegunj</li>
+                        <li>Packers & Movers in Chhani</li>
+                        <li>Packers & Movers in New Sama</li>
+                        <li>Packers & Movers in Sama Road</li>
+                        <li>Packers & Movers in Savali</li>
+                        <li>Packers & Movers in Waghodia</li>
+                        <li>Packers & Movers in New VIP Rd</li>
+                        <li>Packers & Movers in Amit Nagar</li>
+                        <li>Packers & Movers in Old Padra</li>
+                        <li>Packers & Movers in Vasna</li>
+                        <li>Packers & Movers in Bhayli</li>
+                        <li>Packers & Movers in Op Road</li>
+                        <li>Packers & Movers in Sayajigunj</li>
+                        <li>Packers & Movers in kala ghoda</li>
+                        <li>Packers & Movers in Ajwa Road</li>
+                        <li>Packers & Movers in Sardar Estate</li>
+                        <li>Packers & Movers in Parivar</li>
+                        <li>Packers & Movers in Raopura</li>
+                        <li>Packers & Movers in Mandvi</li>
+                        <li>Packers & Movers in Lalbaugh</li>
+                        <li>Packers & Movers in Manjalpur</li>
+                        <li>Packers & Movers in Partapnagar</li>
+                        <li>Packers & Movers in Makarpura</li>
+                        <li>Packers & Movers in Tarsali</li>
+                        <li>Packers & Movers in Susan Circle</li>
+                        <li>Packers & Movers in Maneja</li>
+                        <li>Packers & Movers in Gorwa</li>
+                        <li>Packers & Movers in Gotri</li>
+                        <li>Packers & Movers in Diwalipura</li>
+                        <li>Packers & Movers in Akshar Chowk</li>
+                        <li>Packers & Movers in Atladara</li>
+                        <li>Packers & Movers in Karelibaug</li>
+                        <li>Packers & Movers in Nizampura</li>
+                        <li>Packers & Movers in ONGC</li>
+                        <li>Packers & Movers in Kalali</li>
+                        <li>Packers & Movers in Bharuch</li>
+                    </ul>
+                </div>
+                <div class="table3">
+                    <div class="tabletitle">
+                        Packers & Movers In Gandhinagar
+                    </div>
+                    <ul>
+                        <li>Packers & Movers in Gorwa</li>
+                        <li>Packers & Movers in Gotri</li>
+                        <li>Packers & Movers in Diwalipura</li>
+                        <li>Packers & Movers in Akshar Chowk</li>
+                        <li>Packers & Movers in Atladara</li>
+                        <li>Packers & Movers in Karelibaug</li>
+                        <li>Packers & Movers in Nizampura</li>
+                        <li>Packers & Movers in ONGC</li>
+                        <li>Packers & Movers in Kalali</li>
+                        <li>Packers & Movers in Sector 30</li>
+                        <li>Packers & Movers in Sector 6</li>
+                        <li>Packers & Movers in Sector 7</li>
+                        <li>Packers & Movers in Sector 8</li>
+                        <li>Packers & Movers in Sector 9</li>
+                        <li>Packers & Movers in Adalaj</li>
+                        <li>Packers & Movers in Ambapur</li>
+                        <li>Packers & Movers in BSF</li>
+                        <li>Packers & Movers in Chandrala</li>
+                        <li>Packers & Movers in CRPF G Nagar</li>
+                        <li>Packers & Movers in Dolarana Vasna</li>
+                        <li>Packers & Movers in Gujrat HighCourt</li>
+                        <li>Packers & Movers in Indroda</li>
+                        <li>Packers & Movers in Isanpur mota</li>
+                        <li>Packers & Movers in Vidhansabha</li>
+                        <li>Packers & Movers in Jamiyatpura</li>
+                        <li>Packers & Movers in Kasturba Vidyalaya</li>
+                        <li>Packers & Movers in Vibrant Gujarat</li>
+                        <li>Packers & Movers in Kudasan</li>
+                        <li>Packers & Movers in Lavarpur</li>
+                        <li>Packers & Movers in Lekawada</li>
+                        <li>Packers & Movers in Sachivalaya Complex</li>
+                        <li>Packers & Movers in Pethapur</li>
+                        <li>Packers & Movers in Sargasan</li>
+                        <li>Packers & Movers in Sardhav</li>
+                        <li>Packers & Movers in Vadsar Air Force</li>
+                        <li>Packers & Movers in Vavol</li>
+                        <li>Packers & Movers in Surat</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- Last End -->
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="footerabove">
+                <div class="aboveimg1">
+                    <img src="https://packshifts.in/images/facebook.png">
+                </div>
+                <div class="aboveimg2">
+                    <img src="https://packshifts.in/images/youtube.png">
+                </div>
+                <div class="abovetext">
+                    Terms & Condition
+                </div>
+            </div>
+            <hr class="footerbr" color="white" width="870" size="3px">
+            <div class="belowtext">
+                All Right Reserved.© 20222 Packshifts Relocation Pvt. Ltd.
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Movie Truk Start-->
+        <div class="movietruck">
+            <marquee width="100%" direction="right" height="100px">
+                <img src="IMG/Truck.png">
+            </marquee>
+        </div>
+        <!-- Movie Truk End -->
+
+    </div>
+</body>
+
+</html>

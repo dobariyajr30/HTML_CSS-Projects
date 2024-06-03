@@ -1,0 +1,655 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarimg {
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+.navbar img {
+    width: 180px;
+}
+
+.navbarbutton {
+    padding-right: 50px;
+    margin-top: -3%;
+}
+
+.navbarbutton ul li {
+    display: inline-block;
+    font-weight: 200;
+    color: rgb(79, 79, 79);
+    padding: 0 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.clat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-bottom: 3%;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.clatimg {
+    margin-left: 10%;
+}
+
+.clattext {
+    margin-right: 3%;
+    margin-left: 10%;
+    width: 100%;
+}
+
+.clattext1 {
+    font-weight: 600;
+    font-size: 140%;
+    word-spacing: 5px;
+}
+
+.clattext2 {
+    color: rgb(32, 32, 32);
+    line-height: 200%;
+    text-align: left;
+}
+
+.course {
+    margin: auto;
+    background-color: rgb(222, 222, 222);
+    padding-bottom: 3%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.coursetitle {
+    padding-top: 3%;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    color: #000;
+}
+
+.courseimg1 {
+    margin-top: 1%;
+}
+
+.coursetext1 {
+    line-height: 200%;
+    font-size: 115%;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+.coursebox {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.coursebox1 {
+    background-color: white;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-right: 3%;
+}
+
+.courseboxtext {
+    color: rgb(93, 93, 93);
+    padding-top: 10%;
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.coursebox3 {
+    background-color: white;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.tutorial {
+    background-color: #ffcb00;
+    padding-bottom: 2%;
+}
+
+.tutorialtext1 {
+    font-size: 250%;
+    padding-top: 3%;
+}
+
+.tutorialimg {
+    margin-top: 1%;
+    padding-bottom: 2%;
+}
+
+.tutorialbox {
+    display: flex;
+    margin: 0% 10%;
+}
+
+.tutorialbox1 {
+
+    background-color: white;
+    padding: 1% 3%;
+    border-bottom: 7px solid rgb(197, 197, 197);
+    margin: auto;
+}
+
+.tutorialbox1img {
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.tutorialbox1img_1 {
+    margin-top: 15%;
+}
+
+.tutorialbox1text1 {
+    color: red;
+    font-weight: bolder;
+    margin-top: 3%;
+    font-size: 300%;
+}
+
+.tutorialbox1text2 {
+    font-size: 120%;
+    margin-top: 5%;
+}
+
+.advantage {
+    background-color: rgb(212, 212, 212);
+    padding-bottom: 5%;
+}
+
+.advantageh1 {
+    font-size: 180%;
+    font-weight: 400;
+    padding-top: 4%;
+}
+
+.advantageh2 {
+    margin-top: 1%;
+    font-size: 130%;
+    font-weight: 500;
+}
+
+.advantageimg {
+    margin-top: 1%;
+}
+
+.advantagebox {
+    padding-top: 3%;
+    display: flex;
+    margin: 0% 8%;
+}
+
+.advantagebox1 {
+    background-color: white;
+    margin: auto;
+    height: 225px;
+    width: 410px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 12px rgb(158, 158, 158);
+}
+
+.adavantagebox1above {
+    display: flex;
+    padding-top: 5%;
+
+}
+
+.advantagebox1img {
+    width: 60%;
+}
+
+.adavantagebox1img1text {
+    margin-top: 2%;
+    font-size: 110%;
+}
+
+.adavantageboc1ul {
+    text-align: left;
+    font-size: 90%;
+    color: #636363;
+    margin-top: 2%;
+    padding-left: 10%;
+}
+
+.student {
+    padding-bottom: 3%;
+}
+
+.studenth {
+    margin-top: 3%;
+    font-size: 250%;
+}
+
+.studentimg {
+    margin-top: 1%;
+
+}
+
+.studentcircle {
+    display: flex;
+    margin: 0% 22%;
+}
+
+.studentcircle1 {
+    background: #8288c2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 100%;
+    border: 10px solid #343362;
+    height: 152px;
+    width: 100%;
+    max-width: 152px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 3%;
+}
+
+.studentimgdot {
+    display: flex;
+    margin: 0% 22%;
+}
+
+.studentimgdot1 {
+    margin-right: 1%;
+    padding-right: 2%;
+}
+
+.studentimgdot2 {
+    margin-right: 7%;
+}
+
+.studentimgdot3 {
+    margin-right: 10%;
+}
+
+.studentimgdot4 {
+    margin-right: 10.5%;
+}
+
+.studentimgdot5 {
+    margin-right: 4%;
+}
+
+.studentimgtext1 {
+    color: #1f1f1f;
+    font-size: 90%;
+}
+
+.testimonial {
+    background-color: #ffcb00;
+    padding-bottom: 5%;
+}
+
+.testimonialheading {
+    font-size: 250%;
+    padding-top: 3%;
+}
+
+.testimonialimg {
+    margin-top: 1%;
+}
+
+.testimonailytbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+
+}
+
+.testimonialyt {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 3% 3% 0% 0%;
+}
+
+.testimonialinnerbox {
+    margin-top: 1%;
+    margin-right: 2%;
+
+}
+
+.testimonialyttext {
+    background-color: white;
+    flex: 1 1 auto;
+    padding: 12px 1rem;
+    border-radius: 0% 0% 3% 3%;
+    margin: -4px 0px;
+}
+
+.pitems {
+    flex-basis: 23%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+.clear {
+    margin-top: 5%;
+}
+
+.hr1{
+    margin: auto;
+    height: 10px;
+    width: 85%;
+    background: #ffcb00;
+    border: #ffcb00;
+}
+
+.clearheading {
+    margin-top: 3%;
+    font-size: 250%;
+}
+
+.clearimg {
+    margin-top: 1%;
+}
+
+.inputtext {
+    text-align: left;
+    font-size: 120%;
+}
+.clearcontentmain{
+    display: flex; 
+}
+.clearcontentleft{
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.clearcontentleftdiv{
+    display: flex;
+    width: 210%;
+    border: 2px solid red;
+}
+.clearcontenttext{
+ text-align: left;  
+ padding-bottom: 2%; 
+}
+.requried{
+    color: red;
+}
+.clearcontentinoufield{
+    margin-top: 3%;
+    height: 40px;
+    width: 20%;
+    border: 2px solid red;
+}
+.clearcontentinououterfield1{
+    margin-left: 20px;
+    border: 2px solid red;
+    width: 100%;
+}
+.clearcontentinououterfield2{
+   
+}
+.clearbox1{
+    
+}
+.clearbox2{
+    
+}
+.clearcontentleftdiv2{
+    display: flex;
+    margin-top: 10%;
+    font-family: 'Ubuntu', sans-serif ;
+}
+.contentmsg{
+    margin-top: 10%;
+    text-align: left;
+}
+
+.contentmsginputinnerfield{
+    margin-top: 3%;
+    width: 143%;
+    height: 90px;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+.contentcapthimg{
+    text-align: left;
+    margin-top: 10%;
+}
+.clearrightcontent{
+    margin-right: 10%;
+}
+.clearcheckbox{
+    display: flex;
+    margin-left: 10%;
+}
+.clearcheckboxtext{
+    font-size: 90%;
+    margin-left: 1%;
+}
+.clearbuttonout{
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.clearbutton{
+    height: 50px;
+    width: 800%;
+    background-color: #ffcb00;
+    border: none;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: 'Ubuntu', sans-serif ;
+}
+.hr2{
+    margin: auto;
+    height: 10px;
+    width: 85%;
+    background: #ffcb00;
+    border: #ffcb00;
+    margin-top: 8%;
+}
+.ask{
+    margin-top: 3%;
+    padding-bottom: 10%;
+}
+.asktitle{
+    font-size: 250%;
+}
+.asktitleimg{
+    margin-top: 1%;
+}
+.askselectotter{
+    margin-top: 3%;
+}
+.askselectotter2{
+    margin-top: 1%;
+}
+.askselectinner{
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    width: 65%;
+    height: 50px;
+    font-size: 120%;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 2%;
+}
+.askselectinnerborder{
+    border: 10px solid red;
+}
+.contect{
+    background-color: #636363;
+    padding-bottom: 2%;
+}
+.contectimgout{
+    padding-top: 4%;
+}
+.contectgimg{
+    height: 80px;
+    background-color: white;
+}
+.contectcontent1stparttitle{
+    margin-left: -53%;
+    font-size: 140%;
+    font-weight: 400;
+}
+.contectcontent{
+    display: flex;
+}
+.contectcontent1stpart{
+    color: white;
+    margin-top: 3%;
+}
+.contectcontent1stparttext{
+    display: flex;
+    margin-top: 8%;
+    margin-left: 10%;
+    
+}
+.contectcontent1stparttexttexttitle{
+    margin-top: 2%;
+    font-size: 120%;
+}
+.contectcontent1stparttextimginner{
+    height: 35px;
+}
+.contectcontent1stparttexttexttext{
+    margin-left: 16%;
+    text-align: left;
+    font-weight: 400;
+}
+.contectcontent1stparttexttexttitle2{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.contectcontent1stparttext2{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.contectcontent2ndpart{
+    color: white;
+    margin-top: 3%;
+    margin-left: 4%;
+    width: 20%;
+    
+}
+.contectcontent2ndparttitle2{
+    font-size: 140%;
+    font-weight: 400;
+}
+.contectcontent2ndpartlist{
+    text-align: left;
+    margin-left: 30%;
+}
+ul li{
+    margin-top: 10%;
+}
+
+/* For Phone */
+@media(min-width:0px) and (max-width:500px)
+{
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: sans-serif;
+    }
+    
+    .main{
+        text-align: center;
+    } 
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbarimg {
+        margin-top: 1%;
+    }
+    
+    .navbar img {
+        width: 380px;
+    }
+    
+    .navbarbutton {
+        display: none;
+    }
+    .clat{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .coursebox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .coursebox{
+        margin: 4% 30%;
+    }
+    .coursebox1{
+        margin-top: 10%;
+    }
+    .coursebox3{
+        margin-top: 10%;
+    }
+    .tutorialbox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tutorialbox1{
+        margin-top: 3%;
+    }
+    .advantagebox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advantagebox1{
+        margin-top: 3%;
+        font-size: 120%;
+    }
+    .adavantageboc1ul{
+        text-align: left;
+        font-size: 90%;
+        color: #636363;
+        margin-top: -5%;
+        padding-left: 10%;
+    }
+    
+}
+

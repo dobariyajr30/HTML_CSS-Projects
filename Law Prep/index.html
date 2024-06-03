@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <title>Law Prep Tutorial Patna</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navbaar Start -->
+        <div class="navbar">
+            <div class="navbarimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/logo.svg">
+            </div>
+            <div class="navbarbutton">
+                <ul class="navbarbutton">
+                    <li>Home</li>
+                    <li>Schoolership Test</li>
+                    <li>Our Course</li>
+                    <li>Result</li>
+                    <li>Medical Coverage</li>
+                    <li>Blog</li>
+                    <li>Cntect Us</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navbaar End -->
+        <!-- Banner Start -->
+        <div class="banner">
+            <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2022/01/Desktop-size.png">
+        </div>
+        <!-- Banner End -->
+        <!-- Best CLAT Start -->
+        <div class="clat">
+            <div class="clatimg">
+                <img src="IMG/Website-design-500-dpi-e1648481835272.png" width="350">
+            </div>
+            <div class="clattext">
+                <div class="clattext1">
+                    Best CLAT Coaching in Patna (No 1 CLAT Institute)
+                </div>
+                <br>
+                <div class="clattext2">
+                    <p>Law Prep Tutorial is regarded as one of the best institutes in India for CLAT preparation by the
+                        best reviewers and media houses, including the Zee News, Times of India and other Media Houses.
+                        Our CLAT preparation institute in Patna is considered the best because of our expert faculty
+                        pool, comprehensive and relevant study material, interactive classes, regular assessments and
+                        feedback, personalized attention, proven track record of success, and top-ranked students. If
+                        you are looking for the best CLAT coaching in Patna, look no further than Law Prep Tutorial.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Best CLAT End -->
+        <!-- Course Start -->
+        <div class="course">
+            <div class="coursetitle">
+                Our Course
+            </div>
+            <div class="courseimg1">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider.png">
+            </div>
+            <div class="coursetext1">
+
+                Over the year, Law Prep Tutorial has gained astral popularity in achieving success and training students
+                with best possible ways. We have some best CLAT mentors that one has to offer. These mentors are
+                available to students in class and as well as outside the classroom to solve all of their queries.
+            </div>
+            <div class="coursebox">
+                <div class="coursebox1">
+                    <div class="coursebox1img">
+                        <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2022/01/Ellipse-4.png">
+                    </div>
+                    <div class="courseboxtext">
+                        CLAT 2025 Courses
+                    </div>
+                </div>
+                <div class="coursebox1">
+                    <div class="coursebox1img">
+                        <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2022/01/Ellipse-5.png">
+                    </div>
+                    <div class="courseboxtext">
+                        CLAT 2026 Courses
+                    </div>
+                </div>
+                <div class="coursebox3">
+                    <div class="coursebox1img">
+                        <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2022/01/Ellipse-6.png">
+                    </div>
+                    <div class="courseboxtext">
+                        Test Series
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Course End -->
+        <!-- tutorial Start-->
+        <div class="tutorial">
+            <div class="tutorialtext1">
+                Why Law Prep Tutorial ?
+            </div>
+            <div class="tutorialimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider-red.png">
+            </div>
+            <div class="tutorialbox">
+                <div class="tutorialbox1">
+                    <div class="tutorialbox1img">
+                        <img class="tutorialbox1img_1"
+                            src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/4.svg">
+                    </div>
+                    <div class="tutorialbox1text1">
+                        22
+                    </div>
+                    <div class="tutorialbox1text2">
+                        YEAR OF EXCELLENCE
+                    </div>
+                </div>
+                <div class="tutorialbox1">
+                    <div class="tutorialbox1img">
+                        <img class="tutorialbox1img_1"
+                            src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/3.svg">
+                    </div>
+                    <div class="tutorialbox1text1">
+                        100+
+                    </div>
+                    <div class="tutorialbox1text2">
+                        TOPPERS EVRY YEAR
+                    </div>
+                </div>
+                <div class="tutorialbox1">
+                    <div class="tutorialbox1img">
+                        <img class="tutorialbox1img_1"
+                            src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/2.svg">
+                    </div>
+                    <div class="tutorialbox1text1">
+                        20,000+
+                    </div>
+                    <div class="tutorialbox1text2">
+                        STUDENTS TRAINED
+                    </div>
+                </div>
+                <div class="tutorialbox1">
+                    <div class="tutorialbox1img">
+                        <img class="tutorialbox1img_1"
+                            src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/1.svg">
+                    </div>
+                    <div class="tutorialbox1text1">
+                        12
+                    </div>
+                    <div class="tutorialbox1text2">
+                        ALL INDIA BRANCHES
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tutorial End -->
+        <!-- advantage Start -->
+        <div class="advantage">
+            <div class="advantageh1">
+                <p>
+                    Law Prep Tutorial Clat Coaching in Patna Advantages
+                </p>
+            </div>
+            <div class="advantageh2">
+                <p>
+                    Stay ahead with all-round performance in your chosen Course
+                </p>
+            </div>
+            <div class="advantageimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider.png">
+            </div>
+            <div class="advantagebox">
+                <div class="advantagebox1">
+                    <div class="adavantagebox1above">
+                        <div>
+                            <img class="advantagebox1img"
+                                src="https://lawpreptutorialpatna.com/wp-content/uploads/2023/03/teachings.png">
+                        </div>
+                        <div class="adavantagebox1img1text">
+                            Teaching Methodology
+                        </div>
+                    </div>
+                    <div class="adavantageboc1ul">
+                        <ul>
+                            <li>Concept & Application based learning</li>
+                            <li>Interactive & engaging lectures</li>
+                            <li>Integrated approach focusing on CLAT & other law entrances</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantagebox1">
+                    <div class="adavantagebox1above">
+                        <div>
+                            <img class="advantagebox1img"
+                                src="https://lawpreptutorialpatna.com/wp-content/uploads/2023/03/book.png">
+                        </div>
+                        <div class="adavantagebox1img1text">
+                            Study Material
+                        </div>
+                    </div>
+                    <div class="adavantageboc1ul">
+                        <ul>
+                            <li>Well-researched & analysed</li>
+                            <li>Comprehensive & meticulously designed</li>
+                            <li>Based on latest syllabus & exam pattern</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantagebox1">
+                    <div class="adavantagebox1above">
+                        <div>
+                            <img class="advantagebox1img"
+                                src="https://lawpreptutorialpatna.com/wp-content/uploads/2023/03/test.png">
+                        </div>
+                        <div class="adavantagebox1img1text">
+                            Mock Tests & Assessments
+                        </div>
+                    </div>
+                    <div class="adavantageboc1ul">
+                        <ul>
+                            <li>Detailed Mock test analysis with error analysis report</li>
+                            <li> Compete at national level with All India Law Prep Students</li>
+                            <li> All India Ranking System</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="advantagebox">
+                <div class="advantagebox1">
+                    <div class="adavantagebox1above">
+                        <div>
+                            <img class="advantagebox1img"
+                                src="https://lawpreptutorialpatna.com/wp-content/uploads/2023/03/question.png">
+                        </div>
+                        <div class="adavantagebox1img1text">
+                            Doubt CLearing SYstem
+                        </div>
+                    </div>
+                    <div class="adavantageboc1ul">
+                        <ul>
+                            <li>One-to-one interactive session with subject experts</li>
+                            <li>Detailed & simplified solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantagebox1">
+                    <div class="adavantagebox1above">
+                        <div>
+                            <img class="advantagebox1img"
+                                src="https://lawpreptutorialpatna.com/wp-content/uploads/2023/03/feedback.png">
+                        </div>
+                        <div class="adavantagebox1img1text">
+                            Feedback System
+                        </div>
+                    </div>
+                    <div class="adavantageboc1ul">
+                        <ul>
+                            <li>Timely updates on performance & attendance</li>
+                            <li>Query/ grievance redressal</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantagebox1">
+                    <div class="adavantagebox1above">
+                        <div>
+                            <img class="advantagebox1img"
+                                src="https://lawpreptutorialpatna.com/wp-content/uploads/2023/03/learning.png">
+                        </div>
+                        <div class="adavantagebox1img1text">
+                            Advance LMS
+                        </div>
+                    </div>
+                    <div class="adavantageboc1ul">
+                        <ul>
+                            <li>5 lakh + Questions with Explanations – A prudent mix of Mocks, Sectional, Subject &
+                                Practice Tests help you excel in each section.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- advantage End -->
+        <!-- Student Start -->
+        <div class="student">
+            <div class="studenth">
+                A Student's Journey
+            </div>
+            <div class="studentimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider.png">
+            </div>
+            <div class="studentcircle">
+                <div class="studentcircle1">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/journey-icon-1.png">
+                </div>
+                <div class="studentcircle1">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/journey-icon-4.png">
+                </div>
+                <div class="studentcircle1">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/journey-icon-2.png">
+                </div>
+                <div class="studentcircle1">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/journey-icon-3.png">
+                </div>
+                <div class="studentcircle1">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/uploads/2021/12/journey-icon-5.png">
+                </div>
+            </div>
+            <div class="studentimgdot">
+                <div class="studentimgdot1">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/odd.png">
+                    <div class="studentimgtext1">
+                        Takes & Clears The Takes & Clears The LawPrep Scholarship Admission Test (LPSAT)
+                    </div>
+                </div>
+                <div class="studentimgdot2">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/even.png">
+                    <div class="studentimgtext1">
+                        Learn Through Extensive & In Depth Classroom Sessions
+                    </div>
+                </div>
+                <div class="studentimgdot3">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/odd.png">
+                    <div class="studentimgtext1">
+                        Clears Doubts Through Classroom Discussions
+                    </div>
+                </div>
+                <div class="studentimgdot4">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/even.png">
+                    <div class="studentimgtext1">
+                        Builds Confidence Through LPT Mock Test
+                    </div>
+                </div>
+                <div class="studentimgdot5">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/odd.png">
+                    <div class="studentimgtext1">
+                        Crack CLAT Exam
+                    </div>
+                </div>
+            </div>
+            <!-- Student End -->
+        </div>
+        <!-- Student End-->
+        <!-- Testimonial Start -->
+        <div class="testimonial">
+            <div class="testimonialheading">
+                Student Testimonial
+            </div>
+            <div class="testimonialimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider3.png">
+            </div>
+            <div class="testimonailytbox">
+                <div class="testimonialinnerbox">
+                    <iframe class="testimonialyt" width="406" height="230"
+                        src="https://www.youtube.com/embed/F44ynBA8t70"
+                        title="Interaction with AIR 4 - Harshit Gupta | CLAT 2022 Topper by Law Prep Tutorial"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="testimonialyttext">
+                        Harshit Gupta CLAT 2022, AIR 4
+                    </div>
+                </div>
+                <div class="testimonialinnerbox">
+                    <iframe class="testimonialyt" width="406" height="230"
+                        src="https://www.youtube.com/embed/egGYwxRU1NA"
+                        title="CLAT 2022 Bihar Topper Hrishita Jha from Law Prep Tutorial" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="testimonialyttext">
+                        Hrishita Jha – CLAT 2022, AIR 48
+                    </div>
+                </div>
+                <div class="testimonialinnerbox">
+                    <iframe class="testimonialyt" width="406" height="230"
+                        src="https://www.youtube.com/embed/X-Shpd6N4UU"
+                        title="CLAT 2021 Topper Shreyas Datar AIR #7| Exclusive Interview | CLAT Preparation Strategy &amp; Tips"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="testimonialyttext">
+                        Shreyas – CLAT 2021, AIR 07
+                    </div>
+                </div>
+                <div class="testimonialinnerbox">
+                    <iframe class="testimonialyt" width="406" height="230"
+                        src="https://www.youtube.com/embed/DokINFXeeTM"
+                        title="CLAT 2021 Topper Garima Banka AIR # 9| Exclusive Interview | CLAT Preparation Strategy &amp; Tips"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="testimonialyttext">
+                        GARIMA – CLAT 2021, AIR 09
+                    </div>
+                </div>
+                <div class="testimonialinnerbox">
+                    <iframe class="testimonialyt" width="406" height="230"
+                        src="https://www.youtube.com/embed/2RMPDWwBoA8"
+                        title="How to Prepare for CLAT 2021-22  Interaction with AIR 2 Aadya Singh" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="testimonialyttext">
+                        AADYA – CLAT 2020, AIR 02
+                    </div>
+                </div>
+                <div class="testimonialinnerbox">
+                    <iframe class="testimonialyt" width="406" height="230"
+                        src="https://www.youtube.com/embed/0AIQLdoGIG0"
+                        title="CLAT Topper Interview Anamika Vats | AIR 34 | NLSIU BANGALORE - Strategy to Crack CLAT"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="testimonialyttext">
+                        Anamika – CLAT 2020, AIR 34
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        <!-- try Clear Start -->
+        <div class="clear">
+            <hr class="hr1">
+            <div class="clearheading">
+                Clear all your doubts by best Faculty
+            </div>
+            <div class="clearimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider.png">
+            </div>
+            <div class="clearcontentmain">
+                <div class="clearcontentleft">
+                    <div class="clearcontentleftdiv">
+                        <div class="clearbox1">
+                            <div class="clearcontenttext">
+                                Name <span class="requried">*</span>
+                            </div>
+                            <div class="clearcontentinououterfield1">
+                                <input class="clearcontentinoufield" type="text" placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="clearbox2">
+                            <div class="clearcontenttext">
+                                Name <span class="requried">*</span>
+                            </div>
+                            <div class="clearcontentinououterfield1">
+                                <input class="clearcontentinoufield" type="text" placeholder="Enter Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearcontentleftdiv2">
+                        <div class="clearbox1">
+                            <div class="clearcontenttext">
+                                Name <span class="requried">*</span>
+                            </div>
+                            <div class="clearcontentinououterfield1">
+                                <input class="clearcontentinoufield" type="text" placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="clearbox2">
+                            <div class="clearcontenttext">
+                                Name <span class="requried">*</span>
+                            </div>
+                            <div class="clearcontentinououterfield2">
+                                <input class="clearcontentinoufield" type="text" placeholder="Enter Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentmsg">
+                        <div class="contentmsgtext">
+                            Massage
+                        </div>
+                        <div class="contentmsginputouterfield">
+                            <textarea class="contentmsginputinnerfield" name="contentmsginputinnerfield"
+                                placeholder="Enter Massage"></textarea>
+                        </div>
+                    </div>
+                    <div class="clearcontentleftdiv2">
+                        <div class="clearbox1">
+                            <img src="https://widgets.in5.nopaperforms.com/captcha">
+                        </div>
+                        <div class="clearbox2">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clearrightcontent">
+                    <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/contactus.png">
+                </div>
+            </div>
+            <div class="clearcheckbox">
+                <div class="clearchekbox1">
+                    <input type="checkbox">
+                </div>
+                <div class="clearcheckboxtext">
+                    I agree to receive information from Law Prep Tutorial
+                </div>
+            </div>
+            <div class="clearbuttonout">
+                <button class="clearbutton">Submit</button>
+            </div>
+            <hr class="hr2">
+        </div>
+        <!--  Clear End -->
+        <!--  Ask Start-->
+        <div class="ask">
+            <div class="asktitle">
+                Frequntly Ask Questions
+            </div>
+            <div class="asktitleimg">
+                <img src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/divider.png">
+            </div>
+            <div class="askselectotter">
+                <select class="askselectinner">
+                    <option>Which is the best institute for CLAT in Patna ?</option>
+                    <option>Law Prep known as the best CLAT coaching in Patna,
+                        we have produced toppers every year. We have experienced faculty,
+                        the best study material, the best and preferred Mock tests by students,
+                        an user friendly LMS portal, and much more which make us the preferred destination
+                        for students preparing for CLAT. </option>
+                </select>
+            </div>
+            <div class="askselectotter2">
+                <select class="askselectinner">
+                    <option>What courses are available at Law Prep Tutorial ?</option>
+                    <option class="askselectinnerborder">Law Prep Tutorial offers courses for CLAT & Other Law Entrance
+                        Exams. You can take admission
+                        in One Year or Two Year Courses. </option>
+                </select>
+            </div>
+            <div class="askselectotter2">
+                <select class="askselectinner">
+                    <option>What is the fee for CLAT Coaching in Patna ?</option>
+                    <option>To know the fee for CLAT coaching you can call team of dedicated professionals who are
+                        always willing to help and guide you. Our team will provide all the details that you need or you
+                        can also fill our inquiry form post which, we will call you back as soon as possible to help
+                        you. </option>
+                </select>
+            </div>
+            <div class="askselectotter2">
+                <select class="askselectinner">
+                    <option>Does this course come with mock and sectional tests ?</option>
+                    <option>Yes, we provide comprehensive study material which is aligned with the latest patterns of
+                        Law exams. Study Material includes 35+ Books and 80+ E books. </option>
+                </select>
+            </div>
+            <div class="askselectotter2">
+                <select class="askselectinner">
+                    <option>Do You Provide Study Material for CLAT Preparation ?</option>
+                    <option>Yes, we provide comprehensive study material which is aligned with the latest patterns of
+                        Law exams. Study Material includes 35+ Books and 80+ E books. </option>
+                </select>
+            </div>
+        </div>
+        <!--  Ask End -->
+        <!--  Conteact Start -->
+        <div class="contect">
+            <div class="contectimgout">
+                <img class="contectgimg"
+                    src="https://lawpreptutorialpatna.com/wp-content/themes/lawpreps/images/logo.svg" alt="">
+            </div>
+            <div class="contectcontent">
+                <div class="contectcontent1stpart">
+                    <div class="contectcontent1stparttitle">
+                        CONTACT US
+                    </div>
+                    <div class="contectcontent1stparttext">
+                        <div class="contectcontent1stparttextimg">
+                            <img class="contectcontent1stparttextimginner"
+                                src="https://cdn-icons-png.flaticon.com/128/9572/9572671.png">
+                        </div>
+                        <div class="contectcontent1stparttexttexttitle">
+                            Corporate Office:
+                        </div>
+                    </div>
+                    <div class="contectcontent1stparttexttexttext">
+                        AG TOWER, E Boring Canal Rd, beside BATA SHOWROOM, Patna, Bihar 800001
+                    </div>
+                    <div class="contectcontent1stparttext">
+                        <div class="contectcontent1stparttextimg">
+                            <img class="contectcontent1stparttextimginner"
+                                src="https://cdn-icons-png.freepik.com/256/3616/3616230.png">
+                        </div>
+                        <div class="contectcontent1stparttexttexttitle2">
+                            +91 8055425542
+                        </div>
+                    </div>
+                    <div class="contectcontent1stparttext2">
+                        <div class="contectcontent1stparttextimg">
+                            <img class="contectcontent1stparttextimginner"
+                                src="https://cdn-icons-png.freepik.com/256/11560/11560467.png?semt=ais">
+                        </div>
+                        <div class="contectcontent1stparttexttexttitle2">
+                           support@lawpreptutorialpatna.com
+                        </div>
+                    </div>
+                </div>
+                <div class="contectcontent2ndpart">
+                    <div class="contectcontent2ndparttitle2">
+                        OUR COURSES
+                    </div>
+                    <div class="contectcontent2ndpartlist">
+                        <ul>
+                            <li>CLAT 2025 Courses</li>
+                            <li>CLAT 2026 Courses</li>
+                            <li>CLAT Mock Test</li>
+                            <li>Study Material Packages</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contectcontent2ndpart">
+                    <div class="contectcontent2ndparttitle2">
+                        USEFUL LINKS
+                    </div>
+                    <div class="contectcontent2ndpartlist">
+                        <ul>
+                            <li>About Us</li>
+                            <li>What is CLAT?</li>
+                            <li>CLAT Eligilibity</li>
+                            <li>CLAT Age Limit</li>
+                            <li>CLAT Sullabus</li>
+                            <li>CLAT Preparation Book</li>
+                            <li>Why Gice CLAT?</li>
+                            <li>Privecy Policy</li>
+                            <li>Terms & Coniditions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--  Conteact End -->
+    </div>
+
+</body>
+
+</html>

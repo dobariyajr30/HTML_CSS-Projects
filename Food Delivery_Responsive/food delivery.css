@@ -1,0 +1,199 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+    display: flex;    
+}
+#navbar{
+    position: absolute;
+    top: 0%;
+}
+.navbar::before{
+    content: "";  
+    background-color: black ;
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+}
+.navbarlogo{
+    margin-top: 1%;
+}
+.navbarlogoin{
+    height: 60px;
+}
+.navbaritems{
+    margin-top: 2.5%;
+    
+}
+.navbaritems ul li{
+    display: inline-block;
+  
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 30px;
+    font-weight: 900;
+}
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    background-color: white;
+}
+.navbarbgimg{
+    content: "";
+    background: url(IMG/Navbar\ BG\ Img.jpg) no-repeat center center/cover ;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;    
+    
+}
+.navbarimgcontent{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+    
+}
+.navbarbgimg{
+    color: white;
+
+}
+.navbarbgimgh{
+    font-size: 300%;
+    font-family: 'Baloo Bhai';
+}
+.navbarbgimgp{
+    font-family: 'Bree Serif', serif;
+    font-size: 150%;
+}
+.navbarbgimgbuttonin{
+    padding: 6px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(117, 25, 0);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.srvices{
+  margin-top: 28%;
+}
+.srvicesh{
+    font-size: 250%;
+    font-family: 'Baloo Bhai';
+}
+.servicesbox{
+    display: flex;
+    margin: 0% 9%;
+}
+.servicesbox1{
+    border: 2px solid rgb(109, 22, 0);
+    margin-left: 10%;
+    border-radius: 1.5rem;
+    background-color: rgb(239, 239, 239);
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    padding: 2% 1%; 
+    margin-top: 3%;   
+}
+.servicesbox1inimg{
+    width: 120%;
+    margin: auto;
+}
+.servicesbox1img{
+    width: 20%;
+    margin: auto;
+}
+.servicesbox2img{
+    width: 14%;
+    margin: auto;
+}
+.servicesbox3img{
+    width: 14%;
+    margin: auto;
+}
+.servicesbox1h{
+    font-family: 'Baloo Bhai';
+    font-size: 120%;
+}
+.servicesbox1p{
+    font-family: 'Bree Serif', serif;
+    font-size: 90%;
+}
+.clint{
+    margin-top: 2%;    
+}
+.clinth{
+    font-size: 250%;
+    font-family: 'Baloo Bhai';
+}
+.clintcontent{
+    display: flex;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding: 0% 10%;
+}
+.clintimgin1{
+    width: 50%;
+    
+}
+.clintimgin2{
+    width: 40%;
+}
+.clintimgin3{
+    width: 25%;
+}
+.clintimgin4{
+    width: 60%;
+}
+.form{
+    margin-top: 1%;
+    position: relative;
+    padding-bottom: 3%;
+}   
+.formh{
+    font-size: 250%;
+    font-family: 'Baloo Bhai';
+}
+.formfield{
+    font-family: 'Bree Serif', serif;
+    text-align: left;
+    margin-left: 30%;
+    padding-top: 1%;
+}
+.footer{
+    color: white;
+    background-color: black;
+    padding: 9px 20px;
+}
+.formfieldin{
+    width: 60%;
+    height: 35px;
+    font-size: 80%;
+    border-radius: 9px;
+    padding-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.textarea{
+    margin-top: 1%;
+    width: 61%;
+    border: 1px solid black;
+    border-radius: 9px;
+}
