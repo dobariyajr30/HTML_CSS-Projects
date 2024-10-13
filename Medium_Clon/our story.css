@@ -1,0 +1,313 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.main {
+    background-color: #2d2d2d;
+    color: white;
+
+}
+.main a{
+    text-decoration: none;
+}
+.nav {
+    display: flex;
+    padding-bottom: 1.5%;
+}
+
+.nav_left {
+    flex-basis: 50%;
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+
+.nev_left_img {
+    width: 14%;
+}
+
+.navright {
+    display: flex;
+    margin-left: 25%;
+    margin-top: 1.5%;
+    width: 20%;
+    font-size: 100%;
+}
+
+.navright_in {
+
+    margin-left: 30%;
+    width: 30%;
+    height: 85%;
+    text-align: center;
+    padding-top: 2%;
+    background-color: rgb(86, 86, 86);
+    border-radius: 2cap;
+    border-color: rgb(255, 255, 255);
+
+}
+.navright_in a{
+    color: white;
+}
+
+.navright_up {
+    margin-left: 10%;
+    width: 30%;
+    height: 85%;
+    text-align: center;
+    padding-top: 2%;
+    background-color: white;
+    color: black;
+    border-radius: 2cap;
+    border-style: solid;
+    border-width: thin;
+
+}
+.navright_up a{
+    color: black;
+}
+
+.center_content {
+    display: flex;
+    padding-bottom: 6%;
+}
+
+.center_left {
+    margin-top: 8%;
+    margin-left: 5%;
+    flex-basis: 50%;
+}
+
+.center_left h1 {
+    font-family: 'GT Super';
+    letter-spacing: -0.1cap;
+    font-size: 450%;
+}
+
+.center_left_pera1 {
+    font-size: 150%;
+    margin-top: 8%;
+}
+
+.center_left_pera2 {
+    font-size: 170%;
+    background-color: #656565;
+    margin-top: 6%;
+    font-weight: 600;
+}
+
+.center_left_pera2_2 {
+    font-size: 170%;
+    background-color: #656565;
+    margin-top: 01%;
+    font-weight: 600;
+}
+
+.center_left_pera3 {
+    font-size: 150%;
+    margin-top: 4%;
+}
+
+.center_left span {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.endpart1{
+    display: flex;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: 250%;
+    padding-bottom: 2.5%;
+    color:  white;
+}
+.endpart1_right{
+    margin-left: 58%;
+}
+
+.endpart1:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.endpart2_right {
+    margin-left: 60.5%;
+}
+
+.endpart3 {
+    display: flex;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: 200%;
+    padding-bottom: 2.5%;
+    color: white;
+}
+
+.endpart3_right {
+    margin-left: 57%;
+}
+
+.endpart3:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    display: flex;
+    padding-bottom: 1%;
+}
+
+.footer_left {
+    flex-basis: 78%;
+}
+
+.footer_img {
+    padding-left: 3.5%;
+    padding-top: 1.5%;
+    width: 12%;
+}
+
+.fotter_right {
+    display: flex;
+    padding-top: 2%;
+    margin-left: 3%;
+}
+
+.fotter_right a {
+    color: black;
+    font-size: 80%;
+    margin-right: 4%;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .nav {
+        display: flex;
+        padding-bottom: 4%;
+        padding-top: 4%;
+
+    }
+
+    .nav_left {
+        flex-basis: 10%;
+        margin-left: 3%;
+    }
+
+    .nev_left_img {
+        width: 200%;
+    }
+
+    .navright {
+
+        display: flex;
+        margin-left: 40%;
+        margin-top: 1%;
+        width: 40%;
+        font-size: 90%;
+    }
+    .navright_in {
+        margin-left: 30%;
+        width: 110%;
+        height: 90%;
+        text-align: center;
+        padding-top: 2%;
+        background-color: rgb(86, 86, 86);
+        border-radius: 2cap;
+        border-style: solid;
+        border-width: thin;
+        border-color: rgb(255, 255, 255);
+    }
+   
+    .navright_up {
+        margin-left: 10%;
+        width: 110%;
+        height: 90%;
+        text-align: center;
+        padding-top: 2%;
+        background-color: white;
+        color: black;
+        border-radius: 2cap;
+
+    }
+    .center_content {
+        display: flex;
+        padding-bottom: 6%;
+    }
+
+    .center_left {
+        margin-top: 8%;
+        margin-left: 5%;
+        flex-basis: 80%;
+    }
+
+    .center_left h1 {
+        font-family: 'GT Super';
+        letter-spacing: -0.1cap;
+        font-size: 300%;
+    }
+
+    .center_left_pera1 {
+        font-size: 150%;
+        margin-top: 15%;
+    }
+
+    .center_left_pera2 {
+        font-size: 150%;
+        margin-top:15%;       
+    }
+
+    .center_left_pera2_2 {
+        font-size: 170%;
+    }
+
+    .center_left_pera3 {
+        font-size: 150%;
+        margin-top: 15%;
+    }
+    .endpart1 {
+        padding-left: 3%;
+        padding-top: 4%;
+        font-size: 110%;
+        padding-bottom: 4.5%;
+    }
+
+    .endpart1_right {
+        margin-left: 30%;
+    }
+    .endpart2_right{
+        margin-left: 33%;
+    }
+
+    .endpart3 {
+        display: flex;
+        padding-left: 3%;
+        padding-top: 2%;
+        font-size: 100%;
+        padding-bottom: 2.5%;
+    }
+
+    .endpart3_right {
+        margin-left: 18%;
+    }
+
+    .footer {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_img {
+        width: 30%;
+    }
+
+    .fotter_right {
+        align-items: center;
+        display: flex;
+        padding-top: 2%;
+        margin-left:25%;
+    }
+}
